@@ -1,0 +1,4 @@
+__pycache__
+data_anomaly/*.weights
+data_options/opt.invD.weights
+.ipynb_checkpoints
