@@ -80,7 +80,7 @@ class InvDense_LU(Layer):
             assert not InvDense_LU.backwardPass, 'can only be used in backward pass!'
         return x 
     def inverse(self):
-        layer = InvDense(not self.isInverse)
+        layer = InvDense_LU(not self.isInverse)
         layer.kernel = self.kernel
         # interesting! kernel can be assigned "="
         return layer
